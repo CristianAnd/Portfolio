@@ -1,15 +1,7 @@
+const chk = document.getElementById('chk')
 
-function ativaLetra(eLemento) {
-    const arrTexto = elemento.innerHTML.split('');
-    elemento.innerHTML = '';
-    arrTexto.forEach((Letra, i)=>{
-        setTimeout(()=>{
-            elemento.innerHTML += letra;
-        }, 75 * i);
-    });
-}
+chk.addEventListener('change', () => {
+  document.body.classList.toggle('dark')
+})
 
-
-const titulo = document.querySelector('.digitando');
-
-ativaLetra(titulo);
+!alert("Em desenvolvimento, clique em OK para visualizar!")
