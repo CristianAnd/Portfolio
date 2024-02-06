@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
-    
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Sobre mim</a></li>
-                <li><a href="/">Habilidades</a></li>
-                <li><a href="/">Projetos</a></li>
-                <li><a href="/">Contato  </a></li>
-            </ul>
-        </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio // Cristian Andriel</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a id="logo" href="#">Cristian</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-    <div>
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
-  
-    <div class="home">
-        <div class="title">Hello, Word!</div>
+    <div class="blue_list"></div>
 
-        <div class="conheca-meu-trabalho">
-           <input type="button" value="C:/user/backups/meus-ultimos-projetos">
+    <div class="header_s">
+      <div class="left_header"><img src="/img1 1.png" /></div>
+      <div class="rigth_header">
+        <h1>Hello, Word!</h1>
+        <p>
+          Me chamo Cristian e sou um <span>desenvolvedor de Software</span> em constante
+          desenvolvimento.
+        </p>
+        <div class="rigth_skills">
+            <input type="button" value="C#">
+            <input type="button" value="Dynamics 365">
+            <input type="button" value="HTML">
+            <input type="button" value="CSS3">
+            <input type="button" value="JavaScript">
         </div>
-    </div>  
+      </div>
+    </div>
 
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
-
-</body>
+    <script>
+      ScrollReveal().reveal(".header_s");
+    </script>
+  </body>
 </html>
